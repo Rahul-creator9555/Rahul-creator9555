@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Adoption Shop</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: linear-gradient(#ffffff,#fff8ec);
+      transition: background-color 0.5s ease;
+    }
+
+    header {
+      background-color: #5b4128;
+      padding: 1em;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      color: #fff;
+      font-size: 2em;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    .shop-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      transition: all 0.5s ease;
+    }
+
+    .product {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .product img {
+      width: 350px;
+      height: 350px;
+      border-radius: 8px;
+    }
+
+    .product h2 {
+      font-size: 1.5em;
+      margin: 15px 0 10px;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    .product p {
+      color: #666;
+      transition: color 0.3s ease;
+    }
+
+    .product .price {
+      font-size: 1.2em;
+      color: #007BFF;
+      margin: 10px 0;
+    }
+
+    .product a {
+      padding: 10px 15px;
+      text-decoration: none;
+      border: none;
+      background-color: #007BFF;
+      color: #fff;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .product a:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #5b4128;
+      margin-top: 20px;
+      color: #fff;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+
+      nav a {
+        margin: 0 10px;
+      }
+
+      .product h2 {
+        font-size: 1.2em;
+      }
+
+      .product .price {
+        font-size: 1em;
+      }
+
+      .product a {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pet Adoption Shop</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="petfind.html">Find a Pet</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="shop-container">
+      <!-- Product 1 -->
+      <div class="product">
+          <img src="images/petfood.jpg" alt="Premium Pet Food">
+          <h2>Premium Pet Food</h2>
+          <p>High-quality food to keep your pet healthy and happy.</p>
+          <div class="price">₹850</div>
+        <a href="addedtocart.html">Add to Cart</a>
+      </div>
+  
+      <!-- Product 2 -->
+      <div class="product">
+          <img src="images/pet bed.jpg" alt="Cozy Pet Bed">
+          <h2>Cozy Pet Bed</h2>
+          <p>A soft and cozy bed for your furry friend to rest in.</p>
+          <div class="price">₹960</div>
+          <a href="addedtocart.html">Add to Cart</a>
+      </div>
+  
+      <!-- Product 3 -->
+      <div class="product">
+          <img src="images/pettoy.jpg" alt="Interactive Pet Toys">
+          <h2>Interactive Pet Toys</h2>
+          <p>Fun toys to keep your pet entertained for hours.</p>
+          <div class="price">₹110</div>
+          <a href="addedtocart.html">Add to Cart</a>
+      </div>
+  
+      <!-- Product 4 -->
+      <div class="product">
+          <img src="images/pet collar.jpeg" alt="Stylish Pet Collar">
+          <h2>Stylish Pet Collar</h2>
+          <p>Comfortable and stylish collars for your pets.</p>
+          <div class="price">₹400</div>
+          <a href="addedtocart.html">Add to Cart</a>
+      </div>
+  
+      <!-- Product 5 -->
+      <div class="product">
+          <img src="images/pet shampoo.webp" alt="Gentle Pet Shampoo">
+          <h2>Gentle Pet Shampoo</h2>
+          <p>Keep your pet's coat clean and shiny with our gentle shampoo.</p>
+          <div class="price">₹650</div>
+          <a href="addedtocart.html">Add to Cart</a>
+      </div>
+  
+      <!-- Product 6 -->
+      <div class="product">
+          <img src="images/pet leash.webp" alt="Durable Pet Leash">
+          <h2>Durable Pet Leash</h2>
+          <p>A strong and durable leash for everyday walks.</p>
+          <div class="price">₹480</div>
+          <a href="addedtocart.html">Add to Cart</a>
+      </div>
+  
+      <!-- Product 7 -->
+      <div class="product">
+          <img src="images/pet carrier.jpg" alt="Comfortable Pet Carrier">
+          <h2>Comfortable Pet Carrier</h2>
+          <p>Travel with your pet comfortably using our pet carrier.</p>
+          <div class="price">₹2590</div>
+          <a href="addedtocart.html">Add to Cart</a>
+      </div>
+  
+      <!-- Product 8 -->
+      <div class="product">
+          <img src="images/grooming kit.webp" alt="Complete Grooming Kit">
+          <h2>Complete Grooming Kit</h2>
+          <p>All-in-one grooming kit for your pet's grooming needs.</p>
+          <div class="price">₹1520</div>
+          <a href="addedtocart.html">Add to Cart</a>
+      </div>
+  </section>
+  
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Pet Adoption Shop. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

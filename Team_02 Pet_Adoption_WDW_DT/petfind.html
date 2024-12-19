@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Adoption Shop</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: linear-gradient(#ffffff,#fff8ec);
+      transition: background-color 0.5s ease;
+    }
+
+    header {
+      background-color: #5b4128;
+      padding: 1em;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      color: #fff;
+      font-size: 2em;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    .shop-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      transition: all 0.5s ease;
+    }
+
+    .breed {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .breed:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .breed img {
+      width: 350px;
+      height: 350px;
+      border-radius: 8px;
+    }
+
+    .breed h2 {
+      font-size: 1.5em;
+      margin: 15px 0 10px;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    .breed p {
+      color: #666;
+      transition: color 0.3s ease;
+    }
+
+    .breed .details {
+      font-size: 1.2em;
+      color: #007BFF;
+      margin: 10px 0;
+    }
+
+    .breed a {
+    display:inline-block;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration:none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.breed a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #5b4128;
+      margin-top: 20px;
+      color: #fff;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+
+      nav a {
+        margin: 0 10px;
+      }
+
+      .breed h2 {
+        font-size: 1.2em;
+      }
+
+      .breed .details {
+        font-size: 1em;
+      }
+
+      .breed button {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pet Adoption Shop</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="shop-container">
+        <!-- Breed 1 -->
+        <div class="breed">
+            <img src="images/golden retriver.jpeg" alt="Golden Retriever">
+            <h2>Golden Retriever</h2>
+            <p>Friendly, intelligent, and devoted.</p>
+            <div class="details">Lifespan: 10-12 years | Size: Large</div>
+            <a href="https://en.wikipedia.org/wiki/Dog">Learn More</a>
+        </div>
+
+        <!-- Breed 2 -->
+        <div class="breed">
+            <img src="images/spynex cat.webp" alt="Sphynx Cat">
+            <h2>Sphynx Cat</h2>
+            <p>Affectionate, energetic, and loyal.</p>
+            <div class="details">Lifespan: 12-14 years | Size: Medium</div>
+            <a href="https://en.wikipedia.org/wiki/Cat">Learn More</a>
+        </div>
+
+        <!-- Breed 3 -->
+        <div class="breed">
+            <img src="images/labrador retriver.webp" alt="Labrador Retriever">
+            <h2>Labrador Retriever</h2>
+            <p>Outgoing, even-tempered, and gentle.</p>
+            <div class="details">Lifespan: 10-12 years | Size: Large</div>
+          <a href="https://en.wikipedia.org/wiki/Dog">Learn More</a>
+        </div>
+
+        <!-- Breed 4 -->
+        <div class="breed">
+            <img src="images/persian cat.webp" alt="Persian Cat">
+            <h2>Persian Cat</h2>
+            <p>Quiet, sweet, and affectionate.</p>
+            <div class="details">Lifespan: 12-17 years | Size: Medium</div>
+            <a href="https://en.wikipedia.org/wiki/Cat">Learn More</a>
+        </div>
+
+        <!-- Breed 5 -->
+        <div class="breed">
+            <img src="images/beagle.jpeg" alt="Beagle">
+            <h2>Beagle</h2>
+            <p>Curious, friendly, and merry.</p>
+            <div class="details">Lifespan: 12-15 years | Size: Small</div>
+            <a href="https://en.wikipedia.org/wiki/Dog">Learn More</a>
+        </div>
+
+        <!-- Breed 6 -->
+        <div class="breed">
+            <img src="images/maine coon.png" alt="Maine Coon">
+            <h2>Maine Coon</h2>
+            <p>Gentle, playful, and intelligent.</p>
+            <div class="details">Lifespan: 10-13 years | Size: Large</div>
+            <a href="https://en.wikipedia.org/wiki/Cat">Learn More</a>
+        </div>
+
+        <!-- Breed 7 -->
+        <div class="breed">
+            <img src="images/daachhund dog.webp" alt="Dachshund">
+            <h2>Dachshund</h2>
+            <p>Brave, lively, and independent.</p>
+            <div class="details">Lifespan: 12-16 years | Size: Small</div>
+            <a href="https://en.wikipedia.org/wiki/Dog">Learn More</a>
+        </div>
+
+        <!-- Breed 8 -->
+        <div class="breed">
+            <img src="images/siamese cat.jpeg" alt="Siamese Cat">
+            <h2>Siamese Cat</h2>
+            <p>Sociable, affectionate, and vocal.</p>
+            <div class="details">Lifespan: 15-20 years | Size: Medium</div>
+            <a href="https://en.wikipedia.org/wiki/Cat">Learn More</a>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Pet Adoption Shop. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

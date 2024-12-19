@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    
+    <style>
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4efe8; 
+            background-image: url('images/signup bg.jpg'); 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .signup-form-container {
+            background-color: rgba(255, 248, 240, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            max-width: 450px;
+            width: 100%;
+            backdrop-filter: blur(10px); 
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .signup-form-container h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            text-align: center;
+            color: #8d5524; 
+        }
+
+        .signup-form-container label {
+            margin-bottom: 10px;
+            font-weight: 500;
+            display: block;
+            color: #654321; 
+        }
+
+        .signup-form-container input {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 20px;
+            border: 1px solid #c2b280; 
+            border-radius: 10px;
+            box-sizing: border-box;
+            font-size: 16px;
+            background-color: #faf3e0; 
+        }
+
+        .signup-form-container input:focus {
+            border-color: #8d5524; 
+            outline: none;
+        }
+
+        .signup-form-container button {
+            background-color: #8d5524; 
+            color: #fff;
+            border: none;
+            padding: 14px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.3s;
+            width: 100%;
+        }
+
+        .signup-form-container button:hover {
+            background-color: #7d491e;
+            transform: translateY(-2px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="signup-form-container">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
